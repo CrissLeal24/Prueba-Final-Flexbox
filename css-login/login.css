@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    background-color: rgb(244, 220, 7);
+    color: white;
+    display: flex;
+}
+
+/*//// Contenedor general ////*/
+.container-login{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;  
+}
+/*---- header, title ---*/
+.header-login{ 
+    display: flex;
+    justify-content: start;
+    background-color:rgb(244, 220, 7);;
+    width: 100%;
+    height: 15%;
+}
+
+.title-login{
+    font-size: 5rem;
+    border: white;
+    font-style: italic;
+    margin-top: 0.62rem;
+    -webkit-text-stroke: 0.31rem black;
+    font-weight: bold;
+    color: black;
+}
+
+/*Contenedor del formulario: h2, input, label, link */
+.container-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: -1.87rem;
+    position: relative; 
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #0c0b0b;
+    width: 50vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+.link{
+align-self: hover;
+}
+
+input{
+    margin-left: 18vw;
+    width: 30%;
+    margin-bottom: 1.56rem;
+}
+label,
+h2,
+p{
+    margin-left: 18vw;
+}
+.ingresar{
+    margin-bottom:-1px;
+    width: 4.37rem;
+}
+/*------------------------------------------------*/
+
+/*media query */
+@media screen and (max-width: 700px) {
+    .container-form{
+        width: 20.62rem;
+        height: 100%;
+        background-color: #0c0b0b;
+    }
+    label,
+h2,
+p{
+    margin-left: 12vw;
+}
+    input{
+        margin-left: 12vw;
+        width: 10rem;
+        margin-bottom: 1.56rem;
+    }
+.title-login{
+    -webkit-text-stroke: 0.31rem black;
+}
+}

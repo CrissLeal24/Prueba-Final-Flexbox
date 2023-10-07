@@ -1,0 +1,247 @@
+   *{
+     box-sizing: border-box;
+     margin: 0;
+ }
+
+
+    body{
+     display: flex;
+     background-color: #333;
+ }
+/*//////////////////////////////////////////////////////////header////////////////////////////////////////////////////////////////////////////*/
+    .flex-contenedor{
+     display: flex;
+     width: 100%;
+     height: 15%;
+     background-color: #ffd200;
+     position: fixed;
+ } 
+ 
+   .titulos {
+    display: flex;
+    font-size: 5rem;
+    -webkit-text-stroke: 0.32rem black;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+     } 
+
+    .link{
+     display: flex;
+     margin-top: 1%;
+     margin-left: 1%;
+      }
+
+    .icon-menu{
+     display: flex;
+     align-items: start;
+     margin-top: 1%;
+     position: absolute;
+     margin-left: 95vw;
+      }
+ /*//////////////////////////////////////////Fin del header////////////////////////////////////////////////////////////*/
+
+ /*///////////////////////////////////////////Contenedor de peliculas//////////////////////////////////////////////////*/
+    .flex-container{
+     margin-right: 10%;
+     margin-left: 10%;
+     width: 80%;
+     height: 100%;
+     display: flex;
+     flex-flow: wrap;
+     justify-content: center;
+     margin-top: 15%;
+ }
+
+    .triple-division{
+     display: flex;
+     width: 100%;
+     justify-content: space-evenly;
+ } 
+ 
+    .container-pelis{
+     height: 21.87rem;
+     width: 13.75rem;
+     margin-right: 2%;
+     margin-left: 2%;
+     margin-bottom: 5%;
+ }
+
+    .container-pelis:hover{
+     cursor: pointer;
+     transform: scale(1.2);
+ }
+
+    .container-pelis img{
+     height: 100%;
+     width: 100%;
+ }
+
+    .container-pelis p{
+     display: flex;
+     justify-content: center;
+     color: white;
+ }
+/*/////////////////////////////////////////// Fin del Contenedor de peliculas//////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////// Pie de página footer///////////////////////////////////////////////////////////*/
+    
+    .footer{
+     display: flex;
+     background-color: #ffd200;
+     width: 100%;
+     
+ }
+
+
+    .propaganda{
+     width: 30vw;
+     height: 5.93rem;
+     margin-top: 0.62rem;
+     padding-left: 1rem;
+ }
+
+    .propaganda img{
+     width: 100%;
+     height: 100%;
+ }
+
+    .propaganda p {
+     font-family: 'Rancho', cursive;
+     display: flex;
+     justify-content: center;
+     margin-top: -0.31rem;
+ }
+
+    .titulares{
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     width: 35%;
+     height: 6.87rem;
+ }
+
+    .titulares p{
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     margin-top: 0.31rem;
+ }
+
+    .title{
+     font-family: 'Rancho', cursive;   
+     font-size: larger;
+ }
+
+    .titulares span{
+     display: flex;
+ }
+
+    .redes{
+     display: flex;
+     font-style: italic;
+     font-weight: bold;
+     -webkit-text-stroke: 2px black;
+     font-size: 2.5rem;
+     margin-top: -0.06rem;
+     height: 3.75rem;
+ }
+
+    .propaganda-2{
+     display: flex;
+     width: 32vw;
+     height: 6.87rem;
+     margin-top: 0.62rem;
+     justify-content: center;
+     align-items: end;
+ }
+
+    .propaganda-2 img{
+     width: 100%;
+     height: 75%;
+     margin-bottom: 1.25rem;
+ }
+
+    .propaganda-2 p{
+     display: flex;
+     font-family: 'Rancho', cursive;
+     position: absolute;   
+ }
+ /*//////////////////////////////////////////////////// Fin del footer ////////////////////////////////////////////////////////////////*/
+
+ /*media query */
+    @media screen and (max-width: 670px){
+    .footer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+    height: 100%;
+    }
+
+    .triple-division{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
+    .propaganda{
+     width: 18.75rem;
+     height: 8.12rem;
+    }
+
+    .propaganda img{
+     width: 100%;
+     height: 87%;
+    }
+
+    .titulares{
+     display: flex;
+     margin-top: 1.25rem;
+     margin-bottom: 1.25rem;
+     width: 13.75rem;
+     height: 6.25rem;
+    }
+
+    .propaganda-2{
+     display: flex;
+     width: 20rem;
+     height: 5.18rem;
+    }
+
+    .icon-menu{
+     margin-left: 90vw;
+    }
+
+    .titulos{
+     -webkit-text-stroke: 0.31rem black;
+    }
+
+ }
+    @media screen and (max-width: 550px) { 
+    .flex-contenedor{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 15.62rem;
+    }
+
+    .icon-menu{
+     margin-top: 5.75rem;
+     margin-left: 0;
+    }
+
+    .link{
+     margin-top: 3.75rem;
+    }
+ }
+ 
+    @media screen and (max-width: 400px) {
+    .titulos{
+     font-size: 20vw;
+     -webkit-text-stroke: 0.31rem black;
+    }
+ }
+ 
